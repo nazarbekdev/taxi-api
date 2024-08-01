@@ -1,3 +1,3 @@
 from django.contrib import admin
-
-# Register your models here.
+from .models import UserData, UserLanguage, Order
+admin.site.register((UserData, UserLanguage, Order))
