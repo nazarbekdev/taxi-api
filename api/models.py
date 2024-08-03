@@ -2,7 +2,7 @@ from django.db import models
 
 
 class UserLanguage(models.Model):
-    user_id = models.CharField(max_length=100, primary_key=True)
+    user_id = models.CharField(max_length=100)
     lan = models.CharField(max_length=50)
 
     def __str__(self):
@@ -10,7 +10,7 @@ class UserLanguage(models.Model):
 
 
 class UserData(models.Model):
-    user_id = models.CharField(max_length=100, primary_key=True)
+    user_id = models.CharField(max_length=100)
     name = models.CharField(max_length=100)
     phone_number = models.CharField(max_length=100)
 
@@ -19,7 +19,7 @@ class UserData(models.Model):
 
 
 class Order(models.Model):
-    user_id = models.CharField(max_length=100, primary_key=True)
+    user_id = models.CharField(max_length=100)
     direction = models.CharField(max_length=100)
     day = models.CharField(max_length=100)
     hour = models.CharField(max_length=100)
